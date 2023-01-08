@@ -14,8 +14,6 @@ public class AsyunelusRPG
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public AsyunelusRPG() {
-        StatCalculator.getInstance(Long.class);
-
         DistExecutor.safeRunForDist(
             () -> SideProxy.Client::new,
             () -> SideProxy.Server::new
